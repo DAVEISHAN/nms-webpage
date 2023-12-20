@@ -39,6 +39,30 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <style>
+    .carousel-container {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #imageCarousel {
+        display: flex;
+        overflow: hidden;
+    }
+    
+    #imageCarousel .carousel-item {
+        display: flex;
+        min-width: 100%;
+        justify-content: space-around;
+    }
+    
+    #imageCarousel .carousel-item img {
+        width: 19%; /* As per your LaTeX width */
+    }
+</style>
+
+  
 </head>
   
 <body>
@@ -272,10 +296,32 @@
         <div class="content has-text-justified">
           <p>
             In this protocol, the key points of the human pose are given for the first frame, and the task is to predict the location of those key points in the subsequent frames. We employ pre-trained video SSL model without any further tuning.
-            frame.
           </p>
-        </div>    
-
+        </div>   
+        
+        <div class="carousel-container">
+            <div id="imageCarousel" class="carousel">
+                <!-- Subfigure 1 -->
+                <div class="carousel-item">
+                    <img src="./static/images/pose_prop/pose_prop/0_8_pose.jpg" alt="Subfigure 1 Image 1">
+                    <img src="./static/images/pose_prop/pose_prop/0_12_pose.jpg" alt="Subfigure 1 Image 2">
+                    <img src="./static/images/pose_prop/pose_prop/0_16_pose.jpg" alt="Subfigure 1 Image 3">
+                    <img src="./static/images/pose_prop/pose_prop/0_20_pose.jpg" alt="Subfigure 1 Image 4">
+                    <img src="./static/images/pose_prop/pose_prop/0_24_pose.jpg" alt="Subfigure 1 Image 5">
+                </div>
+                <!-- Subfigure 2 -->
+                <div class="carousel-item">
+                    <img src="./static/images/pose_prop/pose_prop/1_8_pose.jpg" alt="Subfigure 2 Image 1">
+                    <img src="./static/images/pose_prop/pose_prop/1_12_pose.jpg" alt="Subfigure 2 Image 2">
+                    <img src="./static/images/pose_prop/pose_prop/1_16_pose.jpg" alt="Subfigure 2 Image 3">
+                    <img src="./static/images/pose_prop/pose_prop/1_20_pose.jpg" alt="Subfigure 2 Image 4">
+                    <img src="./static/images/pose_prop/pose_prop/1_24_pose.jpg" alt="Subfigure 2 Image 5">
+        </div>
+        <!-- Repeat for other subfigures -->
+    </div>
+    <button onclick="moveImageSlide(-1)">Prev</button>
+    <button onclick="moveImageSlide(1)">Next</button>
+</div>
 
     
       <div class="column is-four-fifths">
@@ -385,6 +431,17 @@
         document.getElementById('carousel').style.transform = `translateX(-${currentSlide * 100}%)`;
     }
 </script>
+    
+<script>
+    let currentImageSlide = 0;
+    
+    function moveImageSlide(step) {
+        const slides = document.querySelectorAll('#imageCarousel .carousel-item');
+        const totalSlides = slides.length;
+        currentImageSlide = (currentImageSlide + step + totalSlides) % totalSlides;
+        document.getElementById('imageCarousel').style.transform = `translateX(-${currentImageSlide * 100}%)`;
+    }
+</script>    
 
   
 </body>
