@@ -1,4 +1,8 @@
-# Nerfies
+# Project Webpage for NMS [AAAI (main technical track)]
+
+Published page: [NMS Project Webpage]([https://nerfies.github.io](https://daveishan.github.io/nms-webpage/))
+
+Taken from Nerfies webpage:
 
 This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
 
