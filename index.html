@@ -397,26 +397,50 @@
                   </div>
               </div>
       
-              <!-- Right side - Dummy Table -->
               <div style="width: 65%; margin-left: 20px;">
-                  <table border="1" style="width: 100%; border-collapse: collapse;">
-                      <tr>
-                          <th>Column 1</th>
-                          <th>Column 2</th>
-                          <th>Column 3</th>
-                      </tr>
-                      <tr>
-                          <td>Row 1, Cell 1</td>
-                          <td>Row 1, Cell 2</td>
-                          <td>Row 1, Cell 3</td>
-                      </tr>
-                      <tr>
-                          <td>Row 2, Cell 1</td>
-                          <td>Row 2, Cell 2</td>
-                          <td>Row 2, Cell 3</td>
-                      </tr>
-                      <!-- Add more rows as needed -->
-                  </table>
+                  <table border="1" style="width: 70%; border-collapse: collapse; text-align: center;">
+                    <thead>
+                        <tr>
+                            <th><strong>Pretraining</strong></th>
+                            <th><strong>J&amp;F-Mean</strong></th>
+                            <th><strong>J-Mean</strong></th>
+                            <th><strong>F-Mean</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ST-MAE</td>
+                            <td>53.5</td>
+                            <td>52.6</td>
+                            <td>54.4</td>
+                        </tr>
+                        <tr>
+                            <td>VideoMAE</td>
+                            <td>53.8</td>
+                            <td>53.2</td>
+                            <td>54.4</td>
+                        </tr>
+                        <tr>
+                            <td>MotionMAE</td>
+                            <td>56.8</td>
+                            <td>55.8</td>
+                            <td>57.8</td>
+                        </tr>
+                        <tr>
+                            <td>SVT</td>
+                            <td>48.5</td>
+                            <td>46.8</td>
+                            <td>50.1</td>
+                        </tr>
+                        <tr>
+                            <td>Ours (ViT-B)</td>
+                            <td>62.1</td>
+                            <td>60.5</td>
+                            <td>63.6</td>
+                        </tr>
+                    </tbody>
+                    <caption>Video Object Segmentation on <strong>DAVIS-2017</strong>.</caption>
+                </table>
               </div>
           </div>
       </div>
