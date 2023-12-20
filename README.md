@@ -1,6 +1,6 @@
-# Project Webpage for NMS [AAAI (main technical track)]
+# Project Webpage for No More Shortcuts: Realizing the Potential of Temporal Self-Supervision [AAAI 2024 (main technical track)]
 
-Published page: [NMS Project Webpage]([https://nerfies.github.io](https://daveishan.github.io/nms-webpage/))
+Published page: [NMS Project Webpage](https://daveishan.github.io/nms-webpage/).
 
 Taken from Nerfies webpage:
 
