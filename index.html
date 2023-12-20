@@ -363,30 +363,17 @@
               <div class="container" style="display: flex; flex-wrap: nowrap; width: 100%; align-items: stretch;">
             
                 <!-- Left side - Video Carousel -->
-                <div id="results-carousel" class="carousel results-carousel" style="flex: 1; margin-right: 20px; overflow: hidden;">
-                  <!-- Each item occupies the full width of the carousel -->
-                  <div class="item item-steve" style="width: 100%;">
-                    <video poster="" id="steve" controls muted loop playsinline style="width: 100%; max-width: 100%; height: auto;">
-                      <source src="./static/videos/vos_dog.mp4" type="video/mp4">
-                    </video>
-                  </div>
+                <div style="flex: 1; margin-right: 20px;">
+                  <div id="results-carousel" class="carousel results-carousel" style="width: 100%; overflow: hidden;">
+                    <!-- Each item occupies the full width of the carousel -->
+                    <div class="item item-steve" style="width: 100%; display: flex; justify-content: center;">
+                      <video poster="" id="steve" controls muted loop playsinline style="width: 100%; max-width: 100%; height: auto;">
+                        <source src="./static/videos/vos_dog.mp4" type="video/mp4">
+                      </video>
+                    </div>
             
-                  <div class="item item-chair-tp" style="width: 100%;">
-                    <video poster="" id="chair-tp" controls muted loop playsinline style="width: 100%; max-width: 100%; height: auto;">
-                      <source src="./static/videos/vos_car-shadow.mp4" type="video/mp4">
-                    </video>
-                  </div>
-            
-                  <div class="item item-fullbody" style="width: 100%;">
-                    <video poster="" id="fullbody" controls muted loop playsinline style="width: 100%; max-width: 100%; height: auto;">
-                      <source src="./static/videos/vos_parkour.mp4" type="video/mp4">
-                    </video>
-                  </div>
-            
-                  <div class="item item-blueshirt" style="width: 100%;">
-                    <video poster="" id="blueshirt" controls muted loop playsinline style="width: 100%; max-width: 100%; height: auto;">
-                      <source src="./static/videos/shooting.mp4" type="video/mp4">
-                    </video>
+                    <!-- Repeat for other items, ensure they are not displayed initially -->
+                    <!-- ... other items ... -->
                   </div>
                 </div>
             
