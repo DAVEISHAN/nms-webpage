@@ -330,9 +330,9 @@
         <!-- NNR video. -->
         <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
-                <h2 class="title is-3">Video</h2>
-                <div class="publication-video">
-                    <video controls autoplay muted loop playsinline style="width: 100%; height: auto;">
+<!--                 <h2 class="title is-3">Video</h2>
+                <div class="publication-video"> -->
+                    <video controls autoplay muted loop playsinline style="width: 70%; height: auto;">
                         <source src="./static/videos/animations_nmsv4.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -344,7 +344,9 @@
         <div class="content has-text-justified">
         <table style="border-collapse: collapse; border: none; border-spacing: 0px; margin-left: auto; margin-right: auto;">
             	<caption>
-                  <strong>Comparison with state-of-the-art methods on Action-related tasks.</strong> We report results for linear probing, full fine-tuning, and video retrieval. Methods are sorted chronologically. Methods using additional modality over RGB videos are shown in <span style="color: rgb(153, 153, 153);">Grey</span> (A = audio, D = frame differences, F = optical flow). R@1 and R@5 indicate video retrieval accuracy in Top-1 and Top-5 nearest neighbors, respectively. Best results are shown in Red, and second-best in Blue.
+                  <div style="text-align: left;">
+                      <strong>Table: Comparison with state-of-the-art methods on Action-related tasks.</strong> We report results for linear probing, full fine-tuning, and video retrieval. Methods are sorted chronologically. Methods using additional modality over RGB videos are shown in <span style="color: rgb(153, 153, 153);">Grey</span> (A = audio, D = frame differences, F = optical flow). R@1 and R@5 indicate video retrieval accuracy in Top-1 and Top-5 nearest neighbors, respectively. Best results are shown in Red, and second-best in Blue.
+                  </div>
               </caption>
 
             	<tr>
@@ -807,13 +809,13 @@
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
             			90.1
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
             			61.1
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
             			68.3
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
             			24.5
             		</td>
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
@@ -825,7 +827,7 @@
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
             			94.2
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
             			72.1
             		</td>
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
@@ -857,7 +859,7 @@
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
             			19.5
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
             			51.6
             		</td>
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
@@ -1337,13 +1339,13 @@
             		<td style="border-right: 1px solid black; padding-right: 3pt; padding-left: 3pt;">
             			SVT&nbsp;(CVPR-22)&nbsp;
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
             			90.8
             		</td>
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
             			57.8
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
             			68.1
             		</td>
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
@@ -1352,7 +1354,7 @@
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
             			50.8
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
             			18.8
             		</td>
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
@@ -1361,16 +1363,16 @@
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
             			67.2
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
             			82.9
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
             			88.0
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
             			44.4
             		</td>
-            		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
             			67.4
             		</td>
             	</tr>
@@ -1478,10 +1480,10 @@
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
             			15.6
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
             			96.1
             		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
             			73.3
             		</td>
             		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
@@ -1580,87 +1582,87 @@
             		</td>
             	</tr>
             	<tr>
-            		<td style="border-right: 1px solid black; padding-right: 3pt; padding-left: 3pt;">
-            			Ours (ViT-B)
-            		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			91.0
-            		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			60.8
-            		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			68.2
-            		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			27.0
-            		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			52.3
-            		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			20.1
-            		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			94.2
-            		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			64.1
-            		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			85.1
-            		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			93.1
-            		</td>
-            		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			49.4
-            		</td>
-            		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			74.0
-            		</td>
-            	</tr>
-            	<tr>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; padding-right: 3pt; padding-left: 3pt;">
-            			Ours (ViT-L)
-            		</td>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			91.5
-            		</td>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			62.5
-            		</td>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			68.3
-            		</td>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			27.7
-            		</td>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			53.1
-            		</td>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			20.4
-            		</td>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			94.3
-            		</td>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			64.3
-            		</td>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			86.2
-            		</td>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			93.4
-            		</td>
-            		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			52.6
-            		</td>
-            		<td style="border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
-            			75.1
-            		</td>
-            	</tr>
+                <td style="border-right: 1px solid black; padding-right: 3pt; padding-left: 3pt;">
+                    Ours (ViT-B)
+                </td>
+                <td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    91.0
+                </td>
+                <td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    60.8  
+                </td>
+                <td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    68.2
+                </td>
+                <td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    27.0
+                </td>
+                <td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    52.3
+                </td>
+                <td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    20.1
+                </td>
+                <td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    94.2
+                </td>
+                <td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    64.1
+                </td>
+                <td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    85.1
+                </td>
+                <td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    93.1
+                </td>
+                <td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    49.4
+                </td>
+                <td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    74.0
+                </td>
+            </tr>
+            <tr>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; padding-right: 3pt; padding-left: 3pt;">
+                    Ours (ViT-L)
+                </td>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
+                    91.5  <!-- Best result in red -->
+                </td>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
+                    62.5  <!-- Best result in red -->
+                </td>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
+                    68.3  <!-- Best result in red -->
+                </td>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
+                    27.7  <!-- Best result in red -->
+                </td>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
+                    53.1  <!-- Best result in red -->
+                </td>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
+                    20.4  <!-- Best result in red -->
+                </td>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: blue;">
+                    94.3  <!-- Second-best result in blue -->
+                </td>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+                    64.3
+                </td>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
+                    86.2  <!-- Best result in red -->
+                </td>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
+                    93.4  <!-- Best result in red -->
+                </td>
+                <td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
+                    52.6  <!-- Best result in red -->
+                </td>
+                <td style="border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt; color: red;">
+                    75.1  <!-- Best result in red -->
+                </td>
+            </tr>
             </table>
       </div>
 
