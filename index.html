@@ -40,18 +40,7 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 
-  <script>
-    let currentImage = 0;
-    const totalImages = 4; // Total number of images in the carousel
-
-    function cycleImages() {
-        currentImage = (currentImage + 1) % totalImages;
-        document.getElementById('image-carousel').style.transform = `translateX(-${currentImage * 100}%)`;
-    }
-
-    // Set the interval for automatic change
-    setInterval(cycleImages, 3000); // Change image every 3 seconds
-  </script>
+  
 
   
 </head>
@@ -426,7 +415,18 @@
         document.getElementById('imageCarousel').style.transform = `translateX(-${currentImageSlide * 100}%)`;
     }
 </script>    
+<script>
+    let currentImage = 0;
+    const totalImages = 4; // Total number of images in the carousel
 
+    function cycleImages() {
+        currentImage = (currentImage + 1) % totalImages;
+        document.getElementById('image-carousel').style.transform = `translateX(-${currentImage * 100}%)`;
+    }
+
+    // Set the interval for automatic change
+    setInterval(cycleImages, 3000); // Change image every 3 seconds
+</script>
   
 </body>
 </html>
