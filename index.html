@@ -163,8 +163,29 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">This webpage is still under construction!</h2>
-        <h2 class="title is-3">Abstract</h2>
+       <h3 class="title is-3">TL;DR:</h3>
+            <div class="content has-text-justified">
+                <p>
+                    Temporal pretext tasks are a great way of learning video self-supervised representation; however, they are too easy to solve for Video Transformers. Our contribution is as follows:
+                    <ul>
+                        <li>More challenging <strong>frame-level</strong> temporal pretext tasks.</li>
+                        <li>Breaking local-patch based shortcuts in the temporal pretext tasks to promote <strong>high-level</strong> motion features (i.e., how an entire actor/object moves in the video), which help in learning both semantic-level temporal features and low-level object/pose features.</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <h3 class="title is-3">What's new over prior Video self-supervised methods?</h3>
+            <div class="content">
+                <ul>
+                    <li>Suitable for both <strong>high-level</strong> semantic tasks like video retrieval, action classification, and video attribute recognition (such as object and scene identification) and <strong>low-level</strong> temporal correspondence tasks like video object segmentation and pose tracking.</li>
+                    <li><strong>Does not require full-finetuning</strong> - Absolute SoTA on Video Retrieval and Linear Video Classification. Most suitable for video search applications!</li>
+                    <li>Provides amazing frame-level video representations (not just video-level)!</li>
+                </ul>
+            </div>
+      
+        
+        
+<!--         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
             <p>
             Self-supervised approaches for video have shown impressive results in video understanding tasks. However, unlike early works that leverage temporal self-supervision, current state-of-the-art methods primarily rely on tasks from the image domain (e.g., contrastive learning) that do not explicitly promote the learning of temporal features. We identify two factors that limit existing temporal self-supervision: 1) tasks are too simple, resulting in saturated training performance, and 2) we uncover shortcuts based on local appearance statistics that hinder the learning of high-level features. To address these issues, we propose 1) a more challenging reformulation of temporal self-supervision as frame-level (rather than clip-level) recognition tasks and 2) an effective augmentation strategy to mitigate shortcuts. Our model extends a representation of single video frames, pre-trained through contrastive learning, with a transformer that we train through temporal self-supervision. 
@@ -172,7 +193,10 @@
           <p>
             We demonstrate experimentally that our more challenging frame-level task formulations and the removal of shortcuts drastically improve the quality of features learned through temporal self-supervision. The generalization capability of our self-supervised video method is evidenced by its state-of-the-art performance in a wide range of high-level semantic tasks, including video retrieval, action classification, and video attribute recognition (such as object and scene identification), as well as low-level temporal correspondence tasks like video object segmentation and pose tracking. Additionally, we show that the video representations learned through our method exhibit increased robustness to the input perturbations.
           </p>
-        </div>
+        </div> -->
+          
+
+          
       </div>
     </div>
     <!--/ Abstract. -->
