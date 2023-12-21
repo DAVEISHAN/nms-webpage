@@ -40,27 +40,18 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 
-  <style>
-    .carousel-container {
-        width: 100%;
-        text-align: center;
+  <script>
+    let currentImage = 0;
+    const totalImages = 4; // Total number of images in the carousel
+
+    function cycleImages() {
+        currentImage = (currentImage + 1) % totalImages;
+        document.getElementById('image-carousel').style.transform = `translateX(-${currentImage * 100}%)`;
     }
-    
-    #imageCarousel {
-        display: flex;
-        overflow: hidden;
-    }
-    
-    #imageCarousel .carousel-item {
-        display: flex;
-        min-width: 100%;
-        justify-content: space-around;
-    }
-    
-    #imageCarousel .carousel-item img {
-        width: 19%; /* As per your LaTeX width */
-    }
-</style>
+
+    // Set the interval for automatic change
+    setInterval(cycleImages, 3000); // Change image every 3 seconds
+  </script>
 
   
 </head>
@@ -292,13 +283,28 @@
     
 
         <br/>
-        <h3 class="title is-4">Human Pose Propagation</h3>
-        <div class="content has-text-justified">
-          <p>
-            In this protocol, the key points of the human pose are given for the first frame, and the task is to predict the location of those key points in the subsequent frames. We employ pre-trained video SSL model without any further tuning.
-          </p>
-        </div>   
         
+      <h3 class="title is-4">Human Pose Propagation</h3>
+      <div class="content has-text-justified">
+        <p>
+          In this protocol, the key points of the human pose are given for the first frame, and the task is to predict the location of those key points in the subsequent frames. We employ pre-trained video SSL model without any further tuning.
+        </p>
+      </div>   
+
+      <div class="carousel-container" style="width: 40%; overflow: hidden; margin-right: 20px;">
+          <div id="image-carousel" class="carousel" style="display: flex;">
+              <!-- Image 1 -->
+              <img src="./static/images/pose_prop/pose_prop0.drawio.png" style="width: 100%; flex-shrink: 0;">
+              <!-- Image 2 -->
+              <img src="./static/images/pose_prop/pose_prop1.drawio.png" style="width: 100%; flex-shrink: 0;">
+              <!-- Image 3 -->
+              <img src="./static/images/pose_prop/pose_prop2.drawio.png" style="width: 100%; flex-shrink: 0;">
+              <!-- Image 4 -->
+              <img src="./static/images/pose_prop/pose_prop3.drawio.png" style="width: 100%; flex-shrink: 0;">
+          </div>
+      </div>
+
+      
        
 
     
